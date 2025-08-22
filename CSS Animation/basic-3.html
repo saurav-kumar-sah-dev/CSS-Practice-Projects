@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    #first {
+      height: 50px;
+      width: 130px;
+      line-height: 35px;
+      color: chartreuse;
+      background-color: darkcyan;
+      border: 3px solid;
+      border-radius: 2px;
+      padding: 5px;
+      margin: 50px;
+      position: relative;
+
+
+      animation: Saurav 1s both reverse 1s ease-in-out infinite;
+    }
+
+@keyframes Saurav {
+  0%{
+    top: 50px;
+    left: 100px;
+  }   
+
+  40%{
+     top: 20px;
+    right: 40px;
+  }
+
+  70%{
+     top: 50px;
+    left: 100px;
+  }
+
+  100%{
+    top: 90px;
+    left: 10px;
+  }
+}
+  </style>
+</head>
+<body>
+  <p id="first">Saurav Kumar Sah</p>
+</body>
+</html>

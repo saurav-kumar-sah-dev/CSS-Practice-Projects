@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Property</title>
+  <style>
+    #first{
+      background-color: blueviolet;
+    }
+
+    @media screen and (min-width:250px) and (max-width:300px) {
+      #first{
+        background-color: red;
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p id="first">Hello World</p>
+</body>
+</html>

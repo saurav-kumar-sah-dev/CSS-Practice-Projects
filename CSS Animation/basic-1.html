@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    #first {
+      height: 50px;
+      width: 130px;
+      line-height: 35px;
+      color: chartreuse;
+      background-color: darkcyan;
+      border: 3px solid;
+      border-radius: 2px;
+      padding: 5px;
+      margin: 50px;
+      
+      position: relative;
+
+
+      animation-name: Saurav;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+      animation-iteration-count: 5;
+      animation-direction: alternate;
+      animation-fill-mode: both;
+    }
+
+@keyframes Saurav {
+   from{
+        top: 50px;
+        left: 70px;
+      }
+      to{
+        right: 50px;
+      }
+}
+  </style>
+</head>
+<body>
+  <p id="first">Saurav Kumar Sah</p>
+</body>
+</html>
